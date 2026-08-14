@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impressum – [[APP-NAME]]</title>
-<meta name="robots" content="index, follow">
+<title>Impressum – Blobs</title>
 <style>
+  /* Bewusst keine externen Schriften/Ressourcen: jede externe Einbindung
+     (z. B. Google Fonts) wäre selbst wieder ein Datenschutzproblem. */
   :root{
     --ink:#16191d;
     --ink-soft:#4a5158;
@@ -24,14 +25,23 @@
   }
   main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
   header{border-bottom:2px solid var(--accent);padding-bottom:1.25rem;margin-bottom:2.5rem}
-  h1{font:600 1.75rem/1.25 Georgia,"Times New Roman",serif;margin:0}
+  h1{font:600 1.75rem/1.25 Georgia,"Times New Roman",serif;margin:0 0 .5rem}
   h2{font:600 1.15rem/1.3 Georgia,"Times New Roman",serif;color:var(--accent);
-     margin:2.5rem 0 .75rem;padding-top:.25rem;border-top:1px solid var(--rule)}
+     margin:2.75rem 0 .75rem;padding-top:.25rem;border-top:1px solid var(--rule)}
+  h3{font-size:1rem;font-weight:600;margin:1.75rem 0 .4rem}
   p,li{color:var(--ink-soft)}
   p{margin:.75rem 0}
-  address{font-style:normal;color:var(--ink-soft);margin:.75rem 0}
+  ul{padding-left:1.25rem;margin:.75rem 0}
+  li{margin:.35rem 0}
+  .meta{font-size:.875rem;color:var(--ink-soft);margin:0}
+  .lead{color:var(--ink);font-size:1.02rem}
   mark{background:var(--mark);color:var(--ink);padding:.1em .3em;border-radius:2px;font-weight:600}
+  table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.925rem}
+  th,td{text-align:left;vertical-align:top;padding:.6rem .7rem;border-bottom:1px solid var(--rule)}
+  th{color:var(--ink);font-weight:600;background:#f2f5f4}
+  td{color:var(--ink-soft)}
   a{color:var(--accent)}
+  address{font-style:normal;color:var(--ink-soft);margin:.75rem 0}
   footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--rule);font-size:.875rem}
   .note{background:#f2f5f4;border-left:3px solid var(--accent);padding:.85rem 1rem;margin:1.25rem 0;font-size:.925rem}
   @media print{body{background:#fff} .note{background:#fff}}
@@ -39,54 +49,42 @@
 </head>
 <body>
 <main>
-
 <header>
   <h1>Impressum</h1>
+  <p class="meta">Angaben gemäß § 5 DDG · Blobs (<code>com.sebastian.blobs</code>)</p>
 </header>
 
-<h2>Angaben gemäß § 5 DDG</h2>
+<h2>Diensteanbieter</h2>
 <address>
-  <mark>[[VOR- UND NACHNAME ODER FIRMENNAME MIT RECHTSFORM]]</mark><br>
-  <mark>[[STRASSE UND HAUSNUMMER]]</mark><br>
-  <mark>[[PLZ ORT]]</mark><br>
+  Sebastian Geiger<br>
+  Schellingstraße 2/1<br>
+  72622 Nürtingen<br>
   Deutschland
 </address>
 
-<div class="note">
-  <mark>[[Nur bei eingetragenen Unternehmen ausfüllen, sonst diesen Kasten löschen:]]</mark><br>
-  Vertreten durch: <mark>[[Geschäftsführer/in]]</mark><br>
-  Registergericht: <mark>[[Amtsgericht]]</mark> · Registernummer: <mark>[[HRB …]]</mark>
-</div>
-
 <h2>Kontakt</h2>
-<p>
-  E-Mail: <mark>[[KONTAKT-E-MAIL]]</mark><br>
-  <mark>[[Telefonnummer – nur eintragen, wenn vorhanden. Eine Telefonnummer ist nicht zwingend, es muss aber ein zweiter, schneller Kommunikationsweg bestehen, z. B. ein Kontaktformular.]]</mark>
-</p>
+<p>E-Mail: <a href="mailto:sebastiang.development@gmail.com">sebastiang.development@gmail.com</a></p>
+<div class="note">Neben der E-Mail-Adresse muss ein zweiter, schneller
+Kommunikationsweg bestehen. Trage hier eine Telefonnummer ein — oder ein
+Kontaktformular, falls du keine Nummer veröffentlichen möchtest.<br>
+<strong>[[TELEFONNUMMER ODER KONTAKTFORMULAR]]</strong></div>
 
-<h2>Umsatzsteuer-Identifikationsnummer</h2>
-<p><mark>[[USt-IdNr. gemäß § 27a UStG eintragen – oder diesen Abschnitt löschen, falls keine vorhanden ist, etwa bei Kleinunternehmerregelung.]]</mark></p>
+<h2>Verantwortlich für den Inhalt</h2>
+<address>Sebastian Geiger, Anschrift wie oben</address>
 
-<h2>Verbraucherstreitbeilegung</h2>
-<p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2>Umsatzsteuer</h2>
+<p>Es wird keine Umsatzsteuer ausgewiesen; die Kleinunternehmerregelung nach
+§ 19 UStG findet Anwendung.</p>
+<div class="note">Falls du umsatzsteuerpflichtig bist: diesen Abschnitt durch
+deine USt-IdNr. gemäß § 27a UStG ersetzen.</div>
 
-<div class="note">
-  <strong>Hinweis für dich, nicht für die Veröffentlichung:</strong> Der früher übliche Link auf die EU-Plattform zur Online-Streitbeilegung darf hier <strong>nicht</strong> mehr stehen. Die Plattform wurde am 20. Juli 2025 abgeschaltet; ein verbliebener Hinweis gilt als irreführend und ist abmahnfähig. Diesen Kasten vor dem Hochladen löschen.
-</div>
-
-<h2>Haftung für Inhalte</h2>
-<p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen entfernen wir diese Inhalte umgehend.</p>
-
-<h2>Haftung für Links</h2>
-<p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft; rechtswidrige Inhalte waren zu diesem Zeitpunkt nicht erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir derartige Links umgehend.</p>
-
-<h2>Urheberrecht</h2>
-<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+<h2>Streitbeilegung</h2>
+<p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor
+einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
 <footer>
   <p><a href="index.html">Datenschutzerklärung</a></p>
 </footer>
-
 </main>
 </body>
 </html>
