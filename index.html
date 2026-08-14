@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Datenschutzerklärung – [[APP-NAME]]</title>
-<meta name="robots" content="index, follow">
+<title>Datenschutzerklärung – Blobs</title>
 <style>
   /* Bewusst keine externen Schriften/Ressourcen: jede externe Einbindung
      (z. B. Google Fonts) wäre selbst wieder ein Datenschutzproblem. */
@@ -50,134 +49,154 @@
 </head>
 <body>
 <main>
-
 <header>
-  <h1>Datenschutzerklärung für die App „<mark>[[APP-NAME]]</mark>“</h1>
-  <p class="meta">Stand: <mark>[[DATUM, z. B. 14.08.2026]]</mark> · Gilt für die Android-App <mark>[[PAKETNAME, z. B. de.beispiel.stepquest]]</mark></p>
+  <h1>Datenschutzerklärung für die App „Blobs“</h1>
+  <p class="meta">Stand: 14.08.2026 · Gilt für die Android-App <code>com.sebastian.blobs</code></p>
 </header>
 
-<p class="lead">Diese Erklärung beschreibt, welche Daten die App verarbeitet, zu welchem Zweck und auf welcher Rechtsgrundlage. Der Grundsatz vorweg: <strong>Deine Schritt- und Aktivitätsdaten bleiben auf deinem Gerät.</strong> Sie werden nicht an uns, nicht an Werbenetzwerke und nicht an sonstige Dritte übertragen.</p>
+<p class="lead">Blobs ist ein Sammelspiel, das deine Schritte zählt. Der
+Grundsatz vorweg: <mark>Alle Daten bleiben auf deinem Gerät.</mark> Es gibt
+keinen Server, kein Nutzerkonto, keine Anmeldung und keine Übertragung an uns
+oder an Dritte. Die App enthält keine Werbung und keine Käufe.</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>Verantwortlich für die Datenverarbeitung im Sinne von Art. 4 Nr. 7 DSGVO ist:</p>
 <address>
-  <mark>[[VOR- UND NACHNAME ODER FIRMA]]</mark><br>
-  <mark>[[STRASSE UND HAUSNUMMER]]</mark><br>
-  <mark>[[PLZ ORT]]</mark><br>
+  Sebastian Geiger<br>
+  Schellingstraße 2/1<br>
+  72622 Nürtingen<br>
   Deutschland<br>
-  E-Mail: <mark>[[KONTAKT-E-MAIL]]</mark>
+  E-Mail: <a href="mailto:sebastiang.development@gmail.com">sebastiang.development@gmail.com</a>
 </address>
-<p>Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen hierfür nicht vorliegen.</p>
+<p>Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen
+Voraussetzungen hierfür nicht vorliegen.</p>
 
 <h2>2. Überblick: Was die App verarbeitet</h2>
 <table>
   <tr><th>Datenart</th><th>Bleibt lokal?</th><th>Empfänger</th></tr>
-  <tr><td>Schritt- und Aktivitätsdaten</td><td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
-  <tr><td>Spielstand, Belohnungen, Lootbox-Inhalte</td><td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
-  <tr><td>Werbe-ID, IP-Adresse, Geräteinformationen (nur bei Werbung)</td><td>Nein</td><td>Google (AdMob)</td></tr>
-  <tr><td>Kauf- und Zahlungsdaten bei In-App-Käufen</td><td>Nein</td><td>Google Play</td></tr>
+  <tr><td>Schrittzahl je Tag</td><td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
+  <tr><td>Spielstand: Blobs, Gegenstände, Währungen, Fortschritt</td>
+      <td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
+  <tr><td>Einstellungen wie Sprache, Darstellung, Erinnerungszeiten</td>
+      <td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
 </table>
+<div class="note">Die App stellt keine Verbindung ins Internet her. Es gibt
+keine Analyse, keine Absturzberichte an Dritte, keine Reichweitenmessung und
+keine Nutzungsprofile.</div>
 
-<h2>3. Gesundheits- und Fitnessdaten (Schritte)</h2>
+<h2>3. Schrittdaten</h2>
 
-<h3>Welche Daten und woher</h3>
-<p>Die App liest Schritt- und Aktivitätsdaten aus folgenden Quellen, sofern du die jeweilige Freigabe erteilst:</p>
+<h3>Woher die Schritte kommen</h3>
+<p>Du wählst beim ersten Start eine Quelle. Zur Wahl stehen:</p>
 <ul>
-  <li><strong>Health Connect</strong> (Datentyp Schritte<mark>[[ggf. weitere Datentypen ergänzen, z. B. „zurückgelegte Distanz“ – nur die, die tatsächlich abgefragt werden]]</mark>)</li>
-  <li><strong>Schrittzähler-Sensor deines Geräts</strong> über die Android-Berechtigung zur körperlichen Aktivität (<code>ACTIVITY_RECOGNITION</code>)</li>
-  <li><strong>Samsung Health</strong>, sofern du dort die Datenfreigabe an Health Connect bzw. an diese App aktiviert hast</li>
+  <li>der <strong>Schrittzähler-Sensor deines Geräts</strong> über die
+      Android-Berechtigung zur körperlichen Aktivität
+      (<code>ACTIVITY_RECOGNITION</code>) — das ist die empfohlene Einstellung</li>
+  <li><strong>Health Connect</strong>, Datentyp Schritte — optional</li>
+  <li><strong>Samsung Health</strong>, sofern du dort die Freigabe erteilst — optional</li>
 </ul>
+<p>Ohne Health Connect und ohne Samsung Health ist die App vollständig
+benutzbar.</p>
 
 <h3>Wozu</h3>
-<p>Ausschließlich, um die Kernfunktion der App bereitzustellen: deine Schritte auszuwerten, Fortschritte darzustellen und daraus Spielfortschritt und Belohnungen abzuleiten.</p>
+<p>Ausschließlich, um die Kernfunktion bereitzustellen: aus deinen Schritten
+Fortschritt, Belohnungen und Sammelinhalte abzuleiten.</p>
 
 <h3>Rechtsgrundlage</h3>
-<p>Schrittdaten sind Gesundheitsdaten im Sinne von Art. 9 DSGVO. Wir verarbeiten sie ausschließlich auf Grundlage deiner <strong>ausdrücklichen Einwilligung</strong> nach Art. 9 Abs. 2 lit. a DSGVO in Verbindung mit Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung erteilst du beim ersten Start der App und zusätzlich über die Systemabfrage von Health Connect bzw. Android.</p>
+<p>Schrittdaten sind Gesundheitsdaten im Sinne von Art. 9 DSGVO. Sie werden
+ausschließlich auf Grundlage deiner ausdrücklichen Einwilligung nach
+Art. 9 Abs. 2 lit. a DSGVO in Verbindung mit Art. 6 Abs. 1 lit. a DSGVO
+verarbeitet. Die Einwilligung erteilst du über die Systemabfrage von Android
+beziehungsweise Health Connect.</p>
 
 <h3>Speicherung, Weitergabe und Löschung</h3>
 <ul>
-  <li>Die Daten werden <strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert. Es gibt keinen Server, kein Nutzerkonto und keine Cloud-Synchronisation durch uns.</li>
-  <li>Wir erhalten <strong>keine Kenntnis</strong> von diesen Daten.</li>
-  <li>Es findet <strong>keinerlei Weitergabe an Dritte</strong> statt. Insbesondere fließen Gesundheits- und Fitnessdaten <strong>nicht in die Werbeauslieferung ein</strong> und werden nicht zur Personalisierung von Werbung verwendet, weder von uns noch von Werbepartnern. Das entspricht der zwingenden Vorgabe von Google Play für Apps mit Zugriff auf Health-Connect- und Aktivitätsdaten.</li>
-  <li>Es erfolgt kein Verkauf und keine Übermittlung an Datenhändler, Versicherungen, Arbeitgeber oder vergleichbare Stellen.</li>
-  <li>Du kannst die Einwilligung jederzeit widerrufen: über die Health-Connect-Einstellungen deines Geräts, über die App-Berechtigungen in den Android-Einstellungen oder in Samsung Health. Der Widerruf wirkt für die Zukunft.</li>
-  <li>Alle lokal gespeicherten Daten werden gelöscht, wenn du <mark>[[in der App „Einstellungen → Daten löschen“ verwendest ODER]]</mark> die App deinstallierst.</li>
+  <li>Die Daten liegen ausschließlich lokal auf deinem Gerät, in der
+      Datenbank der App.</li>
+  <li>Wir erhalten keine Kenntnis von diesen Daten — es gibt keinen Weg, auf
+      dem sie uns erreichen könnten.</li>
+  <li>Es findet keine Weitergabe an Dritte statt. Kein Verkauf, keine
+      Übermittlung an Datenhändler, Versicherungen oder Arbeitgeber.</li>
+  <li>Der Spielstand wird <strong>nicht</strong> in Googles Cloud-Sicherung
+      übernommen. Wer ihn auf ein neues Gerät bringen will, erzeugt in der App
+      unter „Einstellungen → Sicherung erstellen“ eine Datei und spielt sie
+      dort wieder ein — du entscheidest also selbst, wohin diese Datei geht.</li>
+  <li>Du kannst deine Einwilligung jederzeit widerrufen: über die
+      App-Berechtigungen in den Android-Einstellungen, über die
+      Health-Connect-Einstellungen oder in Samsung Health. Der Widerruf wirkt
+      für die Zukunft.</li>
+  <li>Alle lokal gespeicherten Daten werden gelöscht, wenn du die App
+      deinstallierst oder in den Android-Einstellungen ihren Speicher leerst.</li>
 </ul>
 
-<div class="note">
-  <strong>Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie dient nicht der Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten. Wende dich bei gesundheitlichen Fragen an medizinisches Fachpersonal.
-</div>
+<div class="note">Diese App ist kein Medizinprodukt. Sie dient nicht der
+Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten. Wende dich bei
+gesundheitlichen Fragen an medizinisches Fachpersonal.</div>
 
-<h2>4. Werbung</h2>
-<p>Die App finanziert sich unter anderem über Werbung. <mark>[[Anpassen, falls die Werbeform abweicht:]]</mark> Werbung wird ausschließlich in Form freiwilliger Videoanzeigen angezeigt, die du selbst startest, um eine Belohnung im Spiel zu erhalten. Ohne dein aktives Antippen wird keine Anzeige geladen.</p>
+<h2>4. Keine Werbung, keine Käufe</h2>
+<p>Die App zeigt keine Werbung und bindet kein Werbenetzwerk ein. Es gibt keine
+In-App-Käufe; alle Inhalte werden allein durch Spielen freigeschaltet.</p>
+<p>Die App enthält Packs mit zufälligem Inhalt. Sie lassen sich
+<strong>nicht</strong> mit echtem Geld erwerben, sondern nur durch Schritte,
+Aufgaben und Spielfortschritt. Das Öffnen eines Packs verarbeitet nichts über
+die lokale Speicherung des Spielstands hinaus.</p>
 
-<h3>Eingesetzter Dienst</h3>
-<p>Wir setzen <strong>Google AdMob</strong> ein. Anbieter für Nutzer im Europäischen Wirtschaftsraum ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
-
-<h3>Verarbeitete Daten</h3>
-<p>Beim Ausspielen einer Anzeige verarbeitet Google insbesondere:</p>
-<ul>
-  <li>die Werbe-ID deines Geräts (Advertising ID)</li>
-  <li>deine IP-Adresse</li>
-  <li>Geräte- und Betriebssysteminformationen, Spracheinstellung, grobe Standortangabe auf Basis der IP-Adresse</li>
-  <li>Informationen zur Anzeigeninteraktion (Aufruf, Abschluss, Klick)</li>
-</ul>
-<p>Google ist insoweit eigenständig Verantwortlicher. Einzelheiten und die Datenschutzerklärung von Google findest du unter <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
-
-<h3>Rechtsgrundlage und Einwilligung</h3>
-<p>Grundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO sowie – für den Zugriff auf Informationen auf deinem Endgerät – § 25 Abs. 1 TDDDG. Beim ersten Start der App holen wir diese Einwilligung über ein Zustimmungsbanner (Consent-Management-Plattform) ein. Du kannst deine Auswahl jederzeit ändern unter <mark>[[Pfad in der App, z. B. „Einstellungen → Privatsphäre-Einstellungen“]]</mark>. Zusätzlich kannst du in den Android-Einstellungen unter „Datenschutz → Anzeigen“ die Werbe-ID zurücksetzen oder löschen.</p>
-
-<h3>Übermittlung in Drittländer</h3>
-<p>Google verarbeitet Daten auch in den USA. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert; ergänzend bestehen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO. Ein den europäischen Standards entsprechendes Datenschutzniveau kann bei Drittlandübermittlungen dennoch nicht in jedem Fall garantiert werden.</p>
-
-<div class="note">
-  <mark>[[Falls du zusätzlich Firebase Analytics, Crashlytics oder ein weiteres Werbenetzwerk einbindest, muss das hier ergänzt werden – jeweils mit Anbieter, Datenarten, Zweck und Rechtsgrundlage. Wenn du keine dieser SDKs nutzt, ersetze diesen Kasten durch:]]</mark>
-  <br><br>
-  Wir setzen keine Analyse-, Tracking- oder Absturzberichts-Dienste ein. Es findet keine Reichweitenmessung und keine Erstellung von Nutzungsprofilen statt.
-</div>
-
-<h2>5. In-App-Käufe und Lootboxen</h2>
-<p>Die App ist kostenlos und enthält optionale In-App-Käufe. Die Abwicklung erfolgt vollständig über <strong>Google Play Billing</strong>. Deine Zahlungsdaten werden ausschließlich von Google verarbeitet; wir erhalten weder Kontodaten noch Kreditkartendaten, sondern lediglich die Information, ob ein Kauf erfolgreich abgeschlossen wurde, damit der gekaufte Inhalt freigeschaltet werden kann.</p>
-<p>Rechtsgrundlage für die Verarbeitung dieser Kaufbestätigung ist Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Nutzungsvertrags).</p>
-<p>Die App enthält Lootboxen mit zufälligen Inhalten. Diese <strong>können nicht mit Echtgeld erworben werden</strong>; sie werden ausschließlich durch Spielfortschritt und Aktivität freigeschaltet. Das Öffnen einer Lootbox löst keine über die lokale Speicherung des Spielstands hinausgehende Datenverarbeitung aus.</p>
-
-<h2>6. Berechtigungen der App</h2>
+<h2>5. Berechtigungen der App</h2>
 <table>
-  <tr><th>Berechtigung</th><th>Zweck</th></tr>
-  <tr><td>Körperliche Aktivität / <code>ACTIVITY_RECOGNITION</code></td><td>Auslesen der Schrittzahl vom Gerätesensor</td></tr>
-  <tr><td>Health Connect (Schritte<mark>[[ggf. weitere]]</mark>)</td><td>Übernahme von Schrittdaten aus Health Connect und daran angebundenen Apps wie Samsung Health</td></tr>
-  <tr><td>Internetzugriff</td><td>Laden von Anzeigen und Abwicklung von In-App-Käufen</td></tr>
-  <tr><td><mark>[[weitere Berechtigungen ergänzen, z. B. Benachrichtigungen]]</mark></td><td><mark>[[Zweck]]</mark></td></tr>
+  <tr><th>Berechtigung</th><th>Wofür</th></tr>
+  <tr><td>Körperliche Aktivität (<code>ACTIVITY_RECOGNITION</code>)</td>
+      <td>Schrittzahl vom Sensor des Geräts lesen</td></tr>
+  <tr><td>Health Connect – Schritte</td>
+      <td>Schritte aus Health Connect und daran angebundenen Apps übernehmen;
+          nur wenn du diese Quelle wählst</td></tr>
+  <tr><td>Benachrichtigungen</td>
+      <td>Erinnerungen, die du selbst einrichtest</td></tr>
+  <tr><td>Start nach dem Neustart des Geräts</td>
+      <td>Die eingerichteten Erinnerungen nach einem Neustart wieder einplanen</td></tr>
+  <tr><td>Internetzugriff</td>
+      <td>Wird von der App <strong>nicht genutzt</strong>. Die Berechtigung
+          steht im Paket, weil eine eingebundene Bibliothek sie anmeldet. Die
+          App selbst stellt keine Verbindung her.</td></tr>
 </table>
-<p>Alle Berechtigungen kannst du jederzeit in den Android-Systemeinstellungen entziehen. Einzelne Funktionen der App stehen dann nicht mehr zur Verfügung.</p>
+<p>Alle Berechtigungen kannst du jederzeit in den Android-Systemeinstellungen
+entziehen. Einzelne Funktionen stehen dann nicht mehr zur Verfügung.</p>
 
-<h2>7. Speicherdauer</h2>
-<p>Lokal gespeicherte Daten bleiben so lange auf deinem Gerät, bis du sie in der App löschst oder die App deinstallierst. Für die von Google im Rahmen von Werbung und Käufen verarbeiteten Daten gelten die Speicherfristen von Google.</p>
+<h2>6. Speicherdauer</h2>
+<p>Die Daten bleiben so lange auf deinem Gerät, bis du die App deinstallierst
+oder ihren Speicher in den Android-Einstellungen leerst. Da nichts übertragen
+wird, gibt es keine Speicherung an anderer Stelle.</p>
 
-<h2>8. Deine Rechte</h2>
-<p>Du hast nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21). Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3).</p>
-<p>Bitte beachte: Da wir Schritt- und Spielstanddaten weder erheben noch speichern, können wir zu diesen Daten keine Auskunft erteilen und sie nicht löschen. Du hast über dein Gerät jederzeit vollen Zugriff darauf.</p>
-<p>Für Anfragen wende dich an <mark>[[KONTAKT-E-MAIL]]</mark>.</p>
-<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem Mitgliedstaat deines Aufenthaltsorts oder des Orts des mutmaßlichen Verstoßes (Art. 77 DSGVO). Für uns zuständig ist:</p>
-<address>
-  <mark>[[Zuständige Behörde nach Bundesland eintragen. Für Baden-Württemberg:]]</mark><br>
-  Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
-  Lautenschlagerstraße 20, 70173 Stuttgart
-</address>
+<h2>7. Deine Rechte</h2>
+<p>Du hast nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung
+(Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
+Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21) sowie das Recht,
+eine erteilte Einwilligung jederzeit zu widerrufen.</p>
+<p>Da wir keine deiner Daten erhalten, können wir zu ihnen weder Auskunft
+geben noch sie löschen — beides liegt allein in deiner Hand: über die
+Android-Einstellungen deines Geräts. Für Fragen erreichst du uns unter
+<a href="mailto:sebastiang.development@gmail.com">sebastiang.development@gmail.com</a>.</p>
+<p>Außerdem steht dir ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde
+zu. Zuständig ist die Behörde deines Wohnsitzes oder unseres Sitzes.</p>
 
-<h2>9. Kinder</h2>
-<p>Die App richtet sich nicht an Kinder unter <mark>[[Altersgrenze, üblicherweise 16 Jahre – muss zur Altersfreigabe im Play Store passen]]</mark> Jahren. Wir erheben wissentlich keine Daten von Kindern unter dieser Altersgrenze.</p>
+<h2>8. Kinder</h2>
+<p>Die App richtet sich nicht gezielt an Kinder und erhebt wissentlich keine
+Daten von Kindern. Da keinerlei Daten übertragen werden, entsteht auch kein
+Profil.</p>
 
-<h2>10. Hosting dieser Seite</h2>
-<p>Diese Datenschutzerklärung wird über <mark>[[GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA – oder den tatsächlich genutzten Hoster eintragen]]</mark> bereitgestellt. Beim Aufruf der Seite werden technisch notwendige Zugriffsdaten wie IP-Adresse, Zeitpunkt und aufgerufene Datei durch den Hoster verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren Bereitstellung der Seite). Die Seite bindet keine externen Schriftarten, Skripte oder Zählpixel ein.</p>
+<h2>9. Hosting dieser Seite</h2>
+<p>Diese Seite wird über GitHub Pages bereitgestellt (GitHub Inc., 88 Colin
+P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf verarbeitet
+GitHub technisch notwendige Verbindungsdaten wie deine IP-Adresse. Auf diese
+Verarbeitung haben wir keinen Einfluss; Einzelheiten stehen in der
+Datenschutzerklärung von GitHub.</p>
 
-<h2>11. Änderungen dieser Erklärung</h2>
-<p>Wir passen diese Datenschutzerklärung an, wenn sich die Funktionen der App oder die Rechtslage ändern. Es gilt jeweils die hier veröffentlichte Fassung.</p>
+<h2>10. Änderungen dieser Erklärung</h2>
+<p>Ändert sich die App, wird diese Erklärung mit derselben Fassung angepasst.
+Maßgeblich ist der oben genannte Stand.</p>
 
 <footer>
   <p><a href="impressum.html">Impressum</a></p>
 </footer>
-
 </main>
 </body>
 </html>
