@@ -79,8 +79,9 @@ Voraussetzungen hierfür nicht vorliegen.</p>
       <td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
   <tr><td>Einstellungen wie Sprache, Darstellung, Erinnerungszeiten</td>
       <td>Ja, ausschließlich auf dem Gerät</td><td>keine</td></tr>
-  <tr><td>Werbe-ID und technische Ger&auml;teangaben &mdash; <strong>nur</strong>,
-      wenn du im Shop freiwillig ein Video ansiehst</td>
+  <tr><td>Werbe-ID, IP-Adresse, Interaktionen mit der Anzeige und
+      Diagnoseangaben &mdash; <strong>nur</strong>, wenn du im Shop freiwillig
+      ein Video ansiehst</td>
       <td>Nein</td><td>Google (AdMob)</td></tr>
 </table>
 <div class="note">Die App sendet von sich aus nichts. Es gibt keine Analyse,
@@ -147,10 +148,21 @@ Werbung.</p>
 <p>Die Videos liefert <strong>Google AdMob</strong> (Google Ireland Limited,
 Gordon House, Barrow Street, Dublin 4, Irland). Beim Abruf eines Videos
 &uuml;bermittelt das Werbe-SDK technische Angaben deines Ger&auml;ts an Google,
-darunter die <strong>Werbe-ID</strong> (eine zur&uuml;cksetzbare Kennung),
-Ger&auml;te- und Betriebssystemangaben sowie die IP-Adresse. Je nachdem, was du
-im Einwilligungsformular erlaubst, k&ouml;nnen weitere Angaben hinzukommen &mdash;
-das Formular nennt sie einzeln und f&uuml;hrt die beteiligten Partner auf. Google kann daraus
+und zwar nach Googles eigener Aufstellung:</p>
+<ul>
+  <li>die <strong>Werbe-ID</strong> (eine zur&uuml;cksetzbare Kennung) sowie
+      weitere Ger&auml;te- und Kontokennungen,</li>
+  <li>die <strong>IP-Adresse</strong> &mdash; daraus l&auml;sst sich der
+      ungef&auml;hre Ort absch&auml;tzen; ein <em>genauer</em> Standort wird
+      nicht erhoben, die App hat daf&uuml;r nicht einmal die Berechtigung,</li>
+  <li><strong>Interaktionen</strong> rund um die Anzeige: dass sie ge&ouml;ffnet,
+      angetippt oder zu Ende gesehen wurde,</li>
+  <li><strong>Diagnoseangaben</strong>, damit Google Fehler bei der Auslieferung
+      erkennt.</li>
+</ul>
+<p>Je nachdem, was du im Einwilligungsformular erlaubst, k&ouml;nnen weitere
+Angaben hinzukommen &mdash; das Formular nennt sie einzeln und f&uuml;hrt die
+beteiligten Partner auf. Die &Uuml;bertragung ist verschl&uuml;sselt. Google kann daraus
 &mdash; je nach deiner Einwilligung &mdash; personalisierte Werbung ausspielen.
 Einzelheiten:
 <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
